@@ -168,7 +168,7 @@
     //Javascript to display the date and time on my webpage
     
     const d = new Date();
-    document.getElementbyId("date&time").innerHTML = d;
+    document.getElementById("date&time").innerHTML = d;
     
     </script>
     
@@ -178,14 +178,14 @@
     <title>Change Button Colour</title>
     </head>
     <body>
-    <button id="colorButton">Click me to change color</button>
+    <button id="colorButton">Click me to change colour</button>
     
     <script>
     // Get a reference to the button element
-    var button = document.getElementbyId("colorButton");
+    var button = document.getElementById("colorButton");
     
     //Function to change the button color
-    function to changeColor() {
+    function changeColor() {
     // Generate a random color (hexadecimal)
     var randomColor = "#" + Math.floor(Math.random()*16777215).toString(16);
     
