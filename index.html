@@ -256,7 +256,29 @@
       
       <head>
       <title>My Daily Activities</title>
-      <script type="text/javascript" src=https://www.gstatic.com
+      <script type="text/javascript" src=https://www.gstatic.com/charts/loader.js></script>
+      <div id="chart_div"></div>
+      <script type="text/javascript">
+      google.charts.load('current',{packages' :['coherent']});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+      var data = google.visualisation.arrayToDataTable([
+      ['task', 'Hours per Day'],
+      ['Work',8],
+      ['Sleep', 8],
+      ['Eat', 2],
+      ['Study', 4],
+      ['Exercise', 2]
+      ]);
+      
+      var options = {
+      title: 'My Daily Activities'
+      };
+      
+      Var chart = new google.visualisation.PieChart(document.getElementById('chart_div'));
+      chart.draw(draw,options);
+      }
+      </script>
     
     
     <h3 id="References">References</h3>
