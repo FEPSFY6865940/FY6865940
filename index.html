@@ -268,12 +268,12 @@
       <div id="chart_div"></div>
       
       <script type="text/javascript">
-      google.charts.load('current', {'packages' :['corechart']});
+      google.charts.load('current', {'packages':['corechart']});
       google.charts.setOnLoadCallback(drawChart);
       
       function drawChart() {
       var data = google.visualization.arrayToDataTable([
-      ['Task', 'Hours per Day'],
+      ['Task','Hours per Day'],
       ['Work',8],
       ['Sleep',8],
       ['Eat',2],
@@ -286,7 +286,7 @@
       };
       
       var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
-      chart.draw(data, options);
+      chart.draw(data,options);
       }
       </script>
       
