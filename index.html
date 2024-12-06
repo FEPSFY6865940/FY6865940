@@ -100,6 +100,7 @@
       
         
     <h3 id="Introduction">Introduction</h3>
+<pre id="Introduction_InText">
 
     <p class"ex1">
       <pre>
@@ -117,7 +118,7 @@
   
 
     <h3 id="Electric Aircraft">Electric Aircraft</h3>
-    
+    <pre id="Electric_InText">
     <p class"ex1">
       <pre>
       Electric aircraft will likely never become a reality unless there are major advancements in battery technology. This is because replacing fuel 
@@ -134,7 +135,7 @@
       </p>
   
   <h3 id="Sustainable Aviation Fuel (SAF)">Sustainable Aviation Fuel (SAF)</h3>
-  
+  <pre id="SAF_InText">
   <p class"ex1">
     <pre>
       One promising alternative to the electric aircraft concept is Sustainable Aviation Fuel (SAF), produced from renewable resources such as waste oils, 
@@ -150,7 +151,7 @@
     </p>
   
   <h3 id="Hydrogen-Powered Aircraft">Hydrogen-Powered Aircraft</h3>
-  
+  <pre id="Hydrogen_InText">
   <p class"ex1>
     <pre>
       Another alternative to electric aircraft is a hydrogen-powered aircraft. Hydrogen can be used as fuel through combustion or fuel cells. Both don’t produce 
@@ -166,7 +167,7 @@
     </p>
     
     <h3 id="Conclusion">Conclusion</h3>
-    
+    <pre id="Conclusion_InText">
     <p class"ex1>
       <pre>
       Overall, it’s clear that electric aircraft holds promise for reducing carbon emissions massively, however, there are many barriers, primarily due to the weight 
@@ -288,9 +289,14 @@
   function displayTotalWordCount() {
     // Calculate word count for each section and accumulate the total
     const IntroductionCount = displayWordCount("Introduction_InText");
-    const AnalysisCount = displayWordCount("Analysis_InText");
+    const ElectricCount = displayWordCount("Electric_InText");
+    const SAFCount = displayWordCount ("SAF_InText");
+    const HydrogenCount = displayWordCount ("Hydrogen_InText");
+    const ConclusionCount = displayWordCount ("Conclusion_InText");
+    
+    
     // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount + AnalysisCount;
+    const totalWordCount = IntroductionCount + ElectricCount + SAFCount + HydrogenCount + ConclusionCount;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
